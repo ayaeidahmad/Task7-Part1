@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ /* Find the max element and the min element */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .title1 {
+    margin-bottom: 30px;
+    width: 30%;
+    text-align: center;
+}
+.container .form {
+    width: 60%;
+    height: 30%;
+    background-color:antiquewhite ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.container .form input {
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #efa;
+}
+.container .result-max-min {
+    background-color: brown;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+/* Find vowel chars */
+.container2 , .container3 , .container4 , .container5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0;
+    background-color: antiquewhite;
+}
+.container2 .form , .container3 .form , .container4 .form , .container5 .form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* background-color: #efa; */
+    padding: 80px 0 0;
+}
+.container2 .form input , .container3 .form input , .container4 .form input , .container5 .form input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fae;
+}
+.container2 .form .result-vowel-char , .container3 .form .result-even , .container4 .form .result-multi , .container5 .form .result-grade{
+    background-color: brown;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+/* Print all even numbers between 1 to this number */
+.container3 .title3 , .container4 .title4 , .container5 .title5{
+    width: 40%;
+    text-align: center;
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .container .title1 , .container .form , .container2 .form , .container3 .form , .container4 .form , .container5 .form{
+        width: 80%;
+    }
+}
+@media (min-width:300px) and (max-width:575px) {
+    .container .title1 , .container .form , .container2 .form , .container3 .form , .container4 .form , .container5 .form {
+        width: 80%;
+    }
+}
