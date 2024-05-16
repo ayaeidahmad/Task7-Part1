@@ -34,7 +34,7 @@ let number = document.querySelector("#number")
 let result_even = document.querySelector(".result-even")
 
 result_even.addEventListener("click",()=> {
-    for(let i = 0 ; i <= number.value ; i++)
+    for(let i = 1 ; i <= number.value ; i++)
         {
             if(i%2 === 0) {
                 console.log(`The even number ${i}`)
