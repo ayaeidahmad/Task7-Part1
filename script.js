@@ -1,5 +1,15 @@
 // Find the max element and the min element
 
+const container = document.querySelector(".container")
+container.innerHTML = `
+                    <h1 class="title1"> Find the max element and the min element</h1>
+                    <div  class="form">
+                        <input type="number" id="num1" placeholder="num">
+                        <input type="number" id="num2" placeholder="num">
+                        <input type="number" id="num3" placeholder="num">
+                    </div>
+                    <button class="result-max-min">Result-Max-Min</button> `
+
 let result_max_min = document.querySelector(".result-max-min")
 let input1 = document.querySelector("#num1")
 let input2 = document.querySelector("#num2")
@@ -13,6 +23,14 @@ result_max_min.addEventListener("click",()=> {
 })
 
 // Find vowel chars 
+
+const container2 = document.querySelector(".container2")
+container2.innerHTML = `
+                    <h1 class="title2"> Find vowel chars</h1>
+                    <div  class="form">
+                        <input type="text" maxlength="1" id="num" placeholder="please enter a char">
+                        <button class="result-vowel-char">Submit</button>
+                    </div> `
 
 let input = document.querySelector("#num")
 let result_vowel_char = document.querySelector(".result-vowel-char")
@@ -29,12 +47,18 @@ result_vowel_char.addEventListener("click",()=> {
 })
 
 // Print all even numbers between 1 to this number 
-
+const container3 = document.querySelector(".container3")
+container3.innerHTML = `
+                    <h1 class="title3">Print all even numbers between 1 to this number</h1>
+                    <div  class="form">
+                        <input type="number" id="number" placeholder="please enter a number">
+                        <button class="result-even">Submit</button>
+                    </div> `
 let number = document.querySelector("#number")
 let result_even = document.querySelector(".result-even")
 
 result_even.addEventListener("click",()=> {
-    for(let i = 1 ; i <= number.value ; i++)
+    for(let i = 0 ; i <= number.value ; i++)
         {
             if(i%2 === 0) {
                 console.log(`The even number ${i}`)
@@ -43,7 +67,13 @@ result_even.addEventListener("click",()=> {
 })
 
 // print a multiplication table up to 12
-
+const container4 = document.querySelector(".container4")
+container4.innerHTML = `
+                    <h1 class="title4"> print a multiplication table up to 12</h1>
+                    <div  class="form">
+                        <input type="number" id="number1" placeholder="please enter a number">
+                        <button class="result-multi">Submit</button>
+                    </div> `
 let number1 = document.querySelector("#number1")
 let result_multi = document.querySelector(".result-multi")
 let Aray = [1,2,3,4,5,6,7,8,9,10,11,12]
@@ -56,6 +86,17 @@ result_multi.addEventListener("click",()=> {
 })
 
 // program to enter marks of five subjects and calculate total, average and percentage.
+const container5 = document.querySelector(".container5")
+container5.innerHTML = `
+                    <h1 class="title5">program to enter marks of five subjects and calculate total, average and percentage.</h1>
+                    <div class="form">
+                        <input type="number" id="sub1" placeholder="please enter a mark in Physics,">
+                        <input type="number" id="sub2" placeholder="please enter a mark in Chemistry,">
+                        <input type="number" id="sub3" placeholder="please enter a mark in Biology,">
+                        <input type="number" id="sub4" placeholder="please enter a mark in Mathematics">
+                        <input type="number" id="sub5" placeholder="please enter a mark in Computer,">
+                        <button class="result-marks">Submit</button>
+                    </div> `
 
 let sub1 = document.querySelector("#sub1")
 let sub2 = document.querySelector("#sub2")
@@ -73,6 +114,17 @@ result_marks.addEventListener("click",()=> {
 })
 
 // program to input marks of five subjects to Find percentage and grade 
+const container6 = document.querySelector(".container6")
+container6.innerHTML = `
+                    <h1 class="title6">program to input marks of five subjects to Find percentage and grade</h1>
+                    <div class="form">
+                        <input type="number" id="subject1" placeholder="please enter a mark in Physics,">
+                        <input type="number" id="subject2" placeholder="please enter a mark in Chemistry,">
+                        <input type="number" id="subject3" placeholder="please enter a mark in Biology,">
+                        <input type="number" id="subject4" placeholder="please enter a mark in Mathematics">
+                        <input type="number" id="subject5" placeholder="please enter a mark in Computer,">
+                        <button class="result-grade">Submit</button>
+                    </div> `
 
 let subject1 = document.querySelector("#subject1")
 let subject2 = document.querySelector("#subject2")
